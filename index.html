@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Mahmudjon Amonov's front-end developer CV"
+    >
+    <title>Mahmudjon Amonov | CV</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <div class="cv-page">
+      <header class="site-header" id="top">
+        <div class="topbar container">
+          <nav class="site-nav">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#code">Code</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#languages">Languages</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="profile container">
+          <div class="profile-photo">
+            <img src="assets/profile.png" alt="Portrait of Mahmudjon Amonov">
+          </div>
+          <div class="profile-content">
+            <p class="name">Hello, I am</p>
+            <h1>Mahmudjon Amonov</h1>
+            <p class="role">Front-End Developer</p>
+            <p class="profile-summary">
+              I build modern and user-friendly web applications with a focus on
+              clean code and great user experience.
+            </p>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://github.com/makhmudjon-amonov"
+                  aria-label="GitHub"
+                  ><img src="assets/git-branch.svg" alt=""
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/makhmudjon-amonov"
+                  aria-label="LinkedIn"
+                  ><img src="assets/link.svg" alt=""
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:amonovmahmudjon13@gmail.com" aria-label="Email"
+                  ><img src="assets/mail.svg" alt=""
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="container main-content">
+        <div class="top-grid">
+          <section class="card" id="about">
+            <div class="section-heading">
+              <span class="section-icon"
+                ><img src="assets/book-text.svg" alt=""
+              ></span>
+              <h2>About Me</h2>
+            </div>
+            <p>
+              I am a passionate Front-End Developer who enjoys building modern
+              web applications. I like learning new technologies, solving real
+              problems and turning ideas into useful products.
+            </p>
+            <p>
+              I am focused on clean code, performance and continuous
+              self-improvement. Currently, I am strengthening my frontend
+              architecture and problem-solving skills.
+            </p>
+          </section>
+
+          <section class="card" id="contacts">
+            <div class="section-heading">
+              <span class="section-icon"
+                ><img src="assets/phone.svg" alt=""
+              ></span>
+              <h2>Contacts</h2>
+            </div>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-element"
+                  ><img src="assets/mail.svg" alt="" ></span
+                ><a href="mailto:amonovmahmudjon13@gmail.com"
+                  >amonovmahmudjon13@gmail.com</a
+                >
+              </li>
+              <li>
+                <span class="contact-element"
+                  ><img src="assets/tv.svg" alt="" ></span
+                ><a href="https://discord.com/channels/@me"
+                  >_makhmudjon_(@makhmudjon-amonov)</a>
+              </li>
+              <li>
+                <span class="contact-element"
+                  ><img src="assets/git-branch.svg" alt="" ></span
+                ><a href="https://github.com/makhmudjon-amonov"
+                  >github.com/makhmudjon-amonov</a
+                >
+              </li>
+              <li>
+                <span class="contact-element"
+                  ><img src="assets/link.svg" alt="" ></span
+                ><a href="https://www.linkedin.com/in/makhmudjon-amonov"
+                  >linkedin.com/in/makhmudjon-amonov</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="card" id="skills">
+          <div class="section-heading">
+            <span class="section-icon"
+              ><img src="assets/star.svg" alt=""
+            ></span>
+            <h2>Skills</h2>
+          </div>
+          <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Git</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </section>
+
+        <section class="card code-card" id="code">
+          <div class="section-heading">
+            <span class="section-icon"
+              ><img src="assets/code.svg" alt=""
+            ></span>
+            <h2>Code Example</h2>
+          </div>
+          <p>JavaScript solution for the Longest Common Prefix problem.</p>
+          <pre><code>var longestCommonPrefix = function (strs) {
+  let minLength = strs[0].length;
+  let word = "";
+
+  for (let i = 0; i &lt; strs.length; i++) {
+    if (strs[i].length &lt; minLength) {
+      minLength = strs[i].length;
+    }
+  }
+
+  for (let i = 0; i &lt; minLength; i++) {
+    const char = strs[0][i];
+    for (let j = 0; j &lt; strs.length; j++) {
+      if (strs[j][i] !== char) {
+        return word;
+      }
+    }
+    word += char;
+  }
+
+  return word;
+};</code></pre>
+        </section>
+
+        <section class="card" id="projects">
+          <div class="section-heading">
+            <span class="section-icon"
+              ><img src="assets/folder-dot.svg" alt=""
+            ></span>
+            <h2>Projects</h2>
+          </div>
+          <div class="projects-information">
+            <article class="project-item">
+              <div>
+                <h3>Yukchi</h3>
+                <p>
+                  A logistics web application for managing orders, drivers and
+                  clients, including map-based address search.
+                </p>
+                <p class="tech-line">
+                  React · TypeScript · Yandex Maps · REST API
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/makhmudjon-amonov/logist"
+                  >View Source Code</a
+                >
+              </div>
+            </article>
+            <article class="project-item">
+              <div>
+                <h3>RS School CV</h3>
+                <p>
+                  A responsive personal CV website created with semantic HTML
+                  and modern CSS.
+                </p>
+                <p class="tech-line">HTML · CSS · Responsive design · Git</p>
+                <a
+                  class="project-link"
+                  href="https://github.com/makhmudjon-amonov/rsschool-cv"
+                  >View Source Code</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card" id="experience">
+          <div class="section-heading">
+            <span class="section-icon"
+              ><img src="assets/book-text.svg" alt=""
+            ></span>
+            <h2>Work Experience</h2>
+          </div>
+          <article>
+            <h3>Front-End Developer</h3>
+            <p class="muted">Web-based ERP and accounting platform</p>
+            <p>
+              Building interfaces for purchases, sales, inventory, cash,
+              banking, accounting and fixed assets using React and TypeScript.
+            </p>
+          </article>
+        </section>
+
+        <div class="bottom-grid">
+          <section class="card" id="education">
+            <div class="section-heading">
+              <span class="section-icon"
+                ><img src="assets/graduation-cap.svg" alt=""
+              ></span>
+              <h2>Education</h2>
+            </div>
+            <div class="education">
+              <article>
+                <h3>Master's Degree</h3>
+                <p>Navoi State University of Mining and Technology</p>
+                <p>September 2025 — Present</p>
+              </article>
+              <article>
+                <h3>Bachelor's Degree</h3>
+                <p>Navoi State University of Mining and Technology</p>
+                <p class="muted">September 2021 — June 2025</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="card" id="languages">
+            <div class="section-heading">
+              <span class="section-icon"
+                ><img src="assets/languages.svg" alt=""
+              ></span>
+              <h2>Languages</h2>
+            </div>
+            <ul class="language-lists">
+              <li>
+                <span>Uzbek</span><strong>Native</strong
+                ><span class="language-list"><i style="width: 100%"></i></span>
+              </li>
+              <li>
+                <span>English</span><strong>Intermediate</strong
+                ><span class="language-list"><i style="width: 58%"></i></span>
+              </li>
+              <li>
+                <span>Russian</span><strong>Basic</strong
+                ><span class="language-list"><i style="width: 32%"></i></span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer">
+          <p>2026 Mahmudjon Amonov</p>
+          <div class="footer-links">
+            <a href="https://github.com/makhmudjon-amonov">GitHub</a>
+            <span aria-hidden="true">|</span>
+            <a class="rs-link" href="https://rs.school/courses/short-track">
+              <img
+                src="assets/rs-school-logo.png"
+                alt="RS School logo"
+                width="48"
+                height="48"
+              >
+              <span>RS School</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
